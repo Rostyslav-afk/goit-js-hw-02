@@ -14,7 +14,7 @@ buttonStart.addEventListener("click", secondExercise);
 
 
 function secondExercise() {
-    document.addEventListener("mousemove", _.throttle((event) => {
+    document.addEventListener("mousemove", _.debounce((event) => {
         const x = event.clientX;
         const y = event.clientY;
 
